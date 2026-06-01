@@ -1,8 +1,14 @@
-<header class="site-header">
-  <nav class="navbar navbar-expand-lg site-header__navbar">
-    <div class="container">
-
-      <a class="navbar-brand site-header__brand" href="index.html">
+<header class="sticky top-0 z-[1000] border-b border-art-shadow font-sans">
+  <nav
+    class="min-h-[180px] bg-art-surface"
+    aria-label="Navegació principal"
+  >
+    <div class="mx-auto flex min-h-[180px] max-w-7xl items-center justify-between px-20">
+      <a
+        href="./index.html"
+        class="inline-flex items-center transition hover:opacity-80 focus:opacity-80"
+        aria-label="Artesans en Xarxa - Inici"
+      >
         <picture>
           <source
             srcset="./assets/images/header-logo.png?as=webp&width=300"
@@ -10,52 +16,39 @@
           />
           <img
             src="./assets/images/header-logo.png?width=300"
-            alt="Universitat Oberta de Catalunya"
-            class="uoc-logo"
+            alt="Artesans en Xarxa"
+            class="h-36 w-auto"
           />
         </picture>
       </a>
 
       <button
-        class="navbar-toggler site-header__toggler"
+        class="inline-flex items-center rounded-md border border-art-border-dark px-3 py-2 text-sm font-semibold text-art-text focus:outline-none focus:ring-[0.15rem] focus:ring-art-border-dark md:hidden"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNavigation"
-        aria-controls="mainNavigation"
-        aria-expanded="false"
         aria-label="Obrir o tancar el menú de navegació"
       >
-        <span class="navbar-toggler-icon"></span>
+        Menú
       </button>
 
-      <div class="collapse navbar-collapse" id="mainNavigation">
-        <ul class="navbar-nav ms-auto site-header__menu">
-          <li class="nav-item">
-            <a class="nav-link site-header__link" href="index.html" aria-current="page">
-              Inici
-            </a>
-          </li>
+      <ul class="hidden items-center gap-4 md:flex">
+        <li>
+          <a
+            href="./index.html"
+            class="text-[1.2rem] font-medium tracking-[0.03em] text-art-text transition hover:text-art-secondary focus:text-art-secondary"
+          >
+            Inici
+          </a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link site-header__link" href="ponents.html">
-              Ponents
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link site-header__link" href="article.html">
-              Article
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link site-header__link" href="activitats.html">
-              Activitats
-            </a>
-          </li>
-        </ul>
-      </div>
-
+        <li>
+          <a
+            href="./activitats.html"
+            class="text-[1.2rem] font-medium tracking-[0.03em] text-art-text transition hover:text-art-secondary focus:text-art-secondary"
+          >
+            Activitats
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
 </header>

@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+
+    <link rel="icon" type="image/png" href="./assets/images/icon-logo.png">
+    <title>Artesans en xarxa - Article</title>
+  </head>
+  <body>
+
+    <include src="./views/header.html"></include>
+
+    <main class="activities-page">
+      <section class="activities-hero" aria-labelledby="activities-title">
+        <div class="activities-hero__content">
+          <p class="activities-hero__context-title">Programa de les jornades</p>
+
+          <h1 id="activities-title" class="activities-hero__title">
+            Activitats i tallers
+          </h1>
+
+          <p class="activities-hero__intro">
+            Tres dies per experimentar, aprendre i connectar amb oficis, materials i professionals de l’artesania contemporània.
+          </p>
+        </div>
+
+        <div class="activities-hero__date">
+          <span>15–17</span>
+          <small>maig 2026</small>
+        </div>
+      </section>
+
+      <section class="activities" aria-labelledby="workshops-title">
+        <header class="activities__header">
+          <p class="activities__context-title">Tallers destacats</p>
+          <h2 id="workshops-title" class="activities__title">
+            Tria el teu recorregut
+          </h2>
+        </header>
+
+        <div class="activities__list">
+          <article class="workshop-card workshop-card--featured">
+            <span class="workshop-card__tag">Ceràmica</span>
+            <h3 class="workshop-card__title">Peces amb identitat</h3>
+            <p class="workshop-card__text">
+              Taller pràctic per descobrir tècniques bàsiques de modelatge i acabat de peces funcionals.
+            </p>
+            <p class="workshop-card__meta">Divendres · 10.00 h · 26 places</p>
+          </article>
+
+          <article class="workshop-card">
+            <span class="workshop-card__tag">Fusta</span>
+            <h3 class="workshop-card__title">Objectes duradors</h3>
+            <p class="workshop-card__text">
+              Introducció al treball manual de la fusta amb eines senzilles i materials recuperats.
+            </p>
+            <p class="workshop-card__meta">Divendres · 16.00 h · 10 places</p>
+          </article>
+
+          <article class="workshop-card">
+            <span class="workshop-card__tag">Tèxtil</span>
+            <h3 class="workshop-card__title">Tintes vegetals</h3>
+            <p class="workshop-card__text">
+              Sessió dedicada als colors naturals, les fibres orgàniques i els processos de tenyit artesanal.
+            </p>
+            <p class="workshop-card__meta">Dissabte · 11.30 h · 14 places</p>
+          </article>
+
+          <article class="workshop-card">
+            <span class="workshop-card__tag">Paper</span>
+            <h3 class="workshop-card__title">Enquadernació manual</h3>
+            <p class="workshop-card__text">
+              Crea una llibreta artesanal aprenent tècniques bàsiques de plegat, cosit i composició.
+            </p>
+            <p class="workshop-card__meta">Dissabte · 17.00 h · 12 places</p>
+          </article>
+
+          <article class="workshop-card">
+            <span class="workshop-card__tag">Joieria</span>
+            <h3 class="workshop-card__title">Metall i formes orgàniques</h3>
+            <p class="workshop-card__text">
+              Aproximació al disseny de petites peces de joieria inspirades en la natura i el reciclatge.
+            </p>
+            <p class="workshop-card__meta">Diumenge · 10.30 h · 8 places</p>
+          </article>
+
+          <article class="workshop-card">
+            <span class="workshop-card__tag">Vidre</span>
+            <h3 class="workshop-card__title">Llum i transparència</h3>
+            <p class="workshop-card__text">
+              Demostració guiada sobre formes, textures i possibilitats expressives del vidre artesanal.
+            </p>
+            <p class="workshop-card__meta">Diumenge · 16.30 h · 15 places</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
