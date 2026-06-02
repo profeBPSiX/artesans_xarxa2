@@ -1,106 +1,148 @@
 <!doctype html>
 
-<html>
+<html lang="ca">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
 
-    <link rel="icon" type="image/png" href="./assets/images/icon-logo.png">
-    <title>Artesans en xarxa - Article</title>
+    <link rel="icon" type="image/png" href="./assets/images/icon-logo.png" />
+    <title>Artesans en xarxa - Activitats</title>
   </head>
-  <body>
 
+  <body class="m-0 flex min-h-screen flex-col bg-art-bg p-8 font-sans text-base leading-6 text-art-text">
     <include src="./views/header.html"></include>
 
-    <main class="activities-page">
-      <section class="activities-hero" aria-labelledby="activities-title">
-        <div class="activities-hero__content">
-          <p class="activities-hero__context-title">Programa de les jornades</p>
+    <main class="bg-art-bg text-art-text">
+      <section
+        class="flex items-center justify-between gap-8 bg-[linear-gradient(135deg,oklch(94%_0.025_75),oklch(86%_0.055_55))] px-[clamp(1rem,5vw,5rem)] py-20 max-md:min-h-[50svh] max-md:flex-col"
+        aria-labelledby="activities-title"
+      >
+        <div class="max-w-[1000px]">
+          <p class="text-[0.85rem] font-bold uppercase tracking-[0.08em] text-art-secondary">
+            Programa de les jornades
+          </p>
 
-          <h1 id="activities-title" class="activities-hero__title">
+          <h1
+            id="activities-title"
+            class="my-2 font-serif text-[clamp(3rem,9vw,7rem)] leading-[0.9] text-art-primary-dark max-md:text-center"
+          >
             Activitats i tallers
           </h1>
 
-          <p class="activities-hero__intro">
+          <p class="text-[clamp(1.1rem,2vw,1.45rem)] leading-[1.6] text-art-muted max-md:text-center">
             Tres dies per experimentar, aprendre i connectar amb oficis, materials i professionals de l’artesania contemporània.
           </p>
         </div>
 
-        <div class="activities-hero__date">
-          <span>15–17</span>
-          <small>maig 2026</small>
-        </div>
+        <include src="./views/info-card.html"></include>
       </section>
 
-      <section class="activities" aria-labelledby="workshops-title">
-        <header class="activities__header">
-          <p class="activities__context-title">Tallers destacats</p>
-          <h2 id="workshops-title" class="activities__title">
-            Tria el teu recorregut
-          </h2>
-        </header>
+      <section
+        class="px-[clamp(1rem,5vw,5rem)] py-16"
+        aria-labelledby="workshops-title"
+      >
+        <include src="./views/section-heading.html"></include>
 
-        <div class="activities__list">
-          <article class="workshop-card workshop-card--featured">
-            <span class="workshop-card__tag">Ceràmica</span>
-            <h3 class="workshop-card__title">Peces amb identitat</h3>
-            <p class="workshop-card__text">
-              Taller pràctic per descobrir tècniques bàsiques de modelatge i acabat de peces funcionals.
-            </p>
-            <p class="workshop-card__meta">Divendres · 10.00 h · 26 places</p>
-          </article>
+        <div class="mx-auto grid max-w-[1180px] grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-6 [container-name:workshops] [container-type:inline-size]">
+
+          <include src="./views/activity-card.html"></include>
 
           <article class="workshop-card">
-            <span class="workshop-card__tag">Fusta</span>
-            <h3 class="workshop-card__title">Objectes duradors</h3>
-            <p class="workshop-card__text">
+            <span class="workshop-tag">
+              Fusta
+            </span>
+
+            <h3 class="workshop-title">
+              Objectes duradors
+            </h3>
+
+            <p class="leading-[1.6] text-art-muted">
               Introducció al treball manual de la fusta amb eines senzilles i materials recuperats.
             </p>
-            <p class="workshop-card__meta">Divendres · 16.00 h · 10 places</p>
+
+            <p class="workshop-meta">
+              Divendres · 16.00 h · 10 places
+            </p>
           </article>
 
           <article class="workshop-card">
-            <span class="workshop-card__tag">Tèxtil</span>
-            <h3 class="workshop-card__title">Tintes vegetals</h3>
-            <p class="workshop-card__text">
+            <span class="workshop-tag">
+              Tèxtil
+            </span>
+
+            <h3 class="workshop-title">
+              Tintes vegetals
+            </h3>
+
+            <p class="leading-[1.6] text-art-muted">
               Sessió dedicada als colors naturals, les fibres orgàniques i els processos de tenyit artesanal.
             </p>
-            <p class="workshop-card__meta">Dissabte · 11.30 h · 14 places</p>
+
+            <p class="workshop-meta">
+              Dissabte · 11.30 h · 14 places
+            </p>
           </article>
 
           <article class="workshop-card">
-            <span class="workshop-card__tag">Paper</span>
-            <h3 class="workshop-card__title">Enquadernació manual</h3>
-            <p class="workshop-card__text">
+            <span class="workshop-tag">
+              Paper
+            </span>
+
+            <h3 class="workshop-title">
+              Enquadernació manual
+            </h3>
+
+            <p class="leading-[1.6] text-art-muted">
               Crea una llibreta artesanal aprenent tècniques bàsiques de plegat, cosit i composició.
             </p>
-            <p class="workshop-card__meta">Dissabte · 17.00 h · 12 places</p>
+
+            <p class="workshop-meta">
+              Dissabte · 17.00 h · 12 places
+            </p>
           </article>
 
           <article class="workshop-card">
-            <span class="workshop-card__tag">Joieria</span>
-            <h3 class="workshop-card__title">Metall i formes orgàniques</h3>
-            <p class="workshop-card__text">
+            <span class="workshop-tag">
+              Joieria
+            </span>
+
+            <h3 class="workshop-title">
+              Metall i formes orgàniques
+            </h3>
+
+            <p class="leading-[1.6] text-art-muted">
               Aproximació al disseny de petites peces de joieria inspirades en la natura i el reciclatge.
             </p>
-            <p class="workshop-card__meta">Diumenge · 10.30 h · 8 places</p>
+
+            <p class="workshop-meta">
+              Diumenge · 10.30 h · 8 places
+            </p>
           </article>
 
           <article class="workshop-card">
-            <span class="workshop-card__tag">Vidre</span>
-            <h3 class="workshop-card__title">Llum i transparència</h3>
-            <p class="workshop-card__text">
+            <span class="workshop-tag">
+              Vidre
+            </span>
+
+            <h3 class="workshop-title">
+              Llum i transparència
+            </h3>
+
+            <p class="leading-[1.6] text-art-muted">
               Demostració guiada sobre formes, textures i possibilitats expressives del vidre artesanal.
             </p>
-            <p class="workshop-card__meta">Diumenge · 16.30 h · 15 places</p>
+
+            <p class="workshop-meta">
+              Diumenge · 16.30 h · 15 places
+            </p>
           </article>
         </div>
       </section>
     </main>
 
     <include src="./views/footer.html"></include>
-    
+
     <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
